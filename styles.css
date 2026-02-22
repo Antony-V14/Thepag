@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #121212);
+  color: #f0f0f0;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Mantener igual */
+.imagen-brillante {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 5px #ddd423; 
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Header */
+header {
+  background: rgba(30, 30, 60, 0.9);
+  padding: 50px 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  border-bottom: 3px solid #00c6ff;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #00c6ff;
+  text-shadow: 2px 2px 10px rgba(0, 198, 255, 0.8);
+  margin: 0;
+}
+
+/* Navegación */
+nav {
+  background-color: #181818;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #00c6ff;
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #00c6ff;
+}
+
+/* Contenido principal */
+main {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 198, 255, 0.2);
+}
+
+/* Tabla */
+.tabla-flex {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.fila {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+
+.fila:not(:last-child) {
+  border-bottom: 1px solid #333;
+}
+
+.col {
+  padding: 0 12px;
+}
+
+.col-valor {
+  flex: 0.35;
+}
+
+.col-def {
+  flex: 0.35;
+}
+
+.col-ej {
+  flex: 0.30;
+}
+
+.linea-vertical {
+  width: 1px;
+  background: #555;
+  margin: 0 8px;
+}
+
+/* Botones */
+button {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 198, 255, 0.4);
+  transition: transform 0.2s, box-shadow 0.3s;
+} 
+
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(0, 198, 255, 0.6);
+}
+
+/* Footer */
+footer {
+  background-color: #0f0f1a;
+  color: #aaa;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 2px solid #00c6ff;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.5);
+}
